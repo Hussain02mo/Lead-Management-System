@@ -11,6 +11,7 @@ app.secret_key = 'your_secret_key'
 
 db = SQLAlchemy(app)
 
+# Define the Lead model to store lead management information in the database
 class Lead(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
